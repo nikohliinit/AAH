@@ -1,0 +1,13 @@
+{
+  "trigger": "session_end_backstop",
+  "paused_at": "2026-11-17T14:11:37.401885+00:00",
+  "resumed_at": null,
+  "resume_count": 0,
+  "phase": "init",
+  "git_head_at_pause": "5a41783516a84b14d5bfa4bb7a59c6f7a712bd6a",
+  "resume_hint": "Session ended during the init phase. No work was left in progress.",
+  "recommended_skill": "Run /aah-discuss to begin problem statement intake.",
+  "phase_detail": {
+    "cloud_access_required": false
+  }
+}
