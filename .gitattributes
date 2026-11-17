@@ -1,0 +1,25 @@
+# Force LF line endings for all text files
+* text=auto eol=lf
+
+# Codemap database — regenerable binary, auto-resolve conflicts by keeping current branch
+.aah/codebase-intel/codemap.db merge=ours binary
+
+# AAH derived runtime state — rebuilt from feature YAMLs/DAG after every merge
+.aah/feature-list.json merge=ours
+.aah/audit/token-usage.json merge=ours
+
+# Authoritative phase state — merge=ours prevents conflict markers, but
+# pull_from_remote() always restores the remote's version after a non-ff merge
+# because the remote holds the committed state from the last /aah-pause.
+.aah/claude-progress.json merge=ours
+
+# Pause/resume handoff state — rewritten independently per session, never
+# worth reconciling by hand
+.aah/pause-context.json merge=ours
+.aah/pause-state.json merge=ours
+
+# Append-only audit trail — every session's line is independently meaningful,
+# so union (keep both sides' additions) instead of ours (which would silently
+# drop one side's session entries). Not the same file as token-usage.json
+# above: that's a rebuilt aggregate, this is the raw per-session log.
+.aah/audit/activity-log.jsonl merge=union

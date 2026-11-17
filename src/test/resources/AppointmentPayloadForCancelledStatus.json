@@ -1,0 +1,9 @@
+{
+    "appointmentNumber": "5432123",
+    "appointmentStatus": "CANCELLED",
+    "appointmentType": "Carrier to DC",
+    "appointmentScheduledArivalTs": "2024-04-05T14:00:00.000+00:00",
+    "appointmentSealConditionDescription": "Intact",
+    "appointmentCurrTrailerYardAreaID": "Y2",
+	"appointmentDestLocNumber": "3"
+}

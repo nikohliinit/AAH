@@ -1,0 +1,25 @@
+{
+    "messageId": "test-decline-msg-67890",
+    "data": {
+        "beginningSegment": {
+            "standardCarrierAlphaCode": "EFGH",
+            "shipmentIdentificationNumber": "98765432101",
+            "responseCode": "D",
+            "eventCode": "06",
+            "transactionSetPurposeCode": "00",
+            "dateTime": "20240211",
+            "timeQualifier": "10"
+        },
+        "reasonInformation": {
+            "reasonCode": "RT",
+            "reasonDescription": "Rates too high - cannot accept at current pricing levels"
+        },
+        "referenceIdentification": [
+            {
+                "referenceIdentificationQualifier": "CN",
+                "referenceIdentification": "CARRIER123",
+                "freeFormDescription": "Carrier Reference Number"
+            }
+        ]
+    }
+}

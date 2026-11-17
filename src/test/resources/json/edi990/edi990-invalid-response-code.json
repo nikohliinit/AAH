@@ -1,0 +1,12 @@
+{
+    "messageId": "test-invalid-code-99999",
+    "data": {
+        "beginningSegment": {
+            "standardCarrierAlphaCode": "INVL",
+            "shipmentIdentificationNumber": "99999999999",
+            "responseCode": "X",
+            "eventCode": "06",
+            "transactionSetPurposeCode": "00"
+        }
+    }
+}

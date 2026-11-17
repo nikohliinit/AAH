@@ -1,0 +1,73 @@
+schema_version: '2.0'
+initialized_at: '2026-11-17T02:40:58Z'
+compiled_at: null
+source_catalog: _resources/_references/_ports/_registry.yaml
+spine_order:
+- init-project
+- discuss
+- architecture
+- plan
+- build
+- fix
+- deploy
+node_anchors:
+  init-project: []
+  discuss:
+  - name: after-intent-capture
+    description: Immediately after the user's initial intent is captured and written
+      to knowledge/project-brief.md (Step 1), before any discovery questions are asked.
+      This is the earliest point where the tool's purpose is known.
+  architecture:
+  - name: post-module-map
+    description: Immediately after module-map.yaml is written and confirmed by the
+      user, and BEFORE any architecture-doc generation or the review board runs.
+  plan: []
+  build: []
+  fix: []
+  deploy: []
+activities:
+- id: ACT-PROHIBITED-USE-CHECK
+  ref: aah-prohibited-use
+  type: skill
+  impl_status: available
+  target: discuss
+  position: within
+  anchor: after-intent-capture
+  order: 1
+  depends_on: []
+  triggered_by:
+    type: default
+  consumes:
+  - _resources/_references/prohibited-use/prohibited_use_cases.yaml
+  - knowledge/project-brief.md
+  produces:
+  - .aah/prohibited-use-clearance.yaml
+  trigger_reason: null
+  status: pending
+  started_at: null
+  completed_at: null
+  artifacts_produced: []
+- id: ACT-RISK-CLIENT-SERVICE-INTERNAL
+  ref: aah-risk-client-service-internal
+  type: skill
+  impl_status: available
+  target: architecture
+  position: after
+  anchor: null
+  order: 1
+  depends_on: []
+  triggered_by:
+    type: default
+  consumes:
+  - _resources/_references/risk-client-service-internal/risk_criteria_client_service_internal.yaml
+  - .aah/discuss/project-intent.yaml
+  - .aah/discuss/decision-registry.yaml
+  - .aah/architecture/module-map.yaml
+  produces:
+  - .aah/risk-classification.yaml
+  - .aah/risk-classification-report.md
+  trigger_reason: null
+  status: pending
+  started_at: null
+  completed_at: null
+  artifacts_produced: []

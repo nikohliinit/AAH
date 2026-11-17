@@ -1,0 +1,11 @@
+{
+    "messageId": "test-malformed-msg",
+    "data": {
+        "beginningSegment": {
+            "standardCarrierAlphaCode": "MALFORM",
+            "shipmentIdentificationNumber": "44444444444",
+            "responseCode": "A",
+            ,
+        }
+    }
+}

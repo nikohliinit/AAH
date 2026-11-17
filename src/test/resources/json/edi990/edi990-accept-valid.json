@@ -1,0 +1,40 @@
+{
+    "messageId": "test-accept-msg-12345",
+    "data": {
+        "beginningSegment": {
+            "standardCarrierAlphaCode": "ABCD",
+            "shipmentIdentificationNumber": "12345678901",
+            "responseCode": "A",
+            "eventCode": "06",
+            "transactionSetPurposeCode": "00",
+            "dateTime": "20240211",
+            "timeQualifier": "10"
+        },
+        "equipmentDetails": [
+            {
+                "equipmentInitial": "TEST",
+                "equipmentNumber": "12345",
+                "equipmentDescriptionCode": "TL",
+                "equipmentLength": "53",
+                "height": "102"
+            }
+        ],
+        "shipmentWeightDetails": {
+            "weight": "45000",
+            "weightQualifier": "G",
+            "weightUnitCode": "L"
+        },
+        "referenceIdentification": [
+            {
+                "referenceIdentificationQualifier": "BM",
+                "referenceIdentification": "BOL123456",
+                "freeFormDescription": "Bill of Lading"
+            },
+            {
+                "referenceIdentificationQualifier": "PO",
+                "referenceIdentification": "PO987654",
+                "freeFormDescription": "Purchase Order Number"
+            }
+        ]
+    }
+}

@@ -1,0 +1,6 @@
+rules:
+  - name: "TEST_RULE"
+    when:
+      condition: "ANY"
+    then:
+      action: "ALLOW"

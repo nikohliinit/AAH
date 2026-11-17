@@ -1,0 +1,10 @@
+{
+    "messageId": "test-missing-fields-22222",
+    "data": {
+        "beginningSegment": {
+            "standardCarrierAlphaCode": "MISS",
+            "eventCode": "06",
+            "transactionSetPurposeCode": "00"
+        }
+    }
+}

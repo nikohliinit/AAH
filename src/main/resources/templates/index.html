@@ -1,0 +1,76 @@
+
+<html>
+<head>
+    <title th:text="${titleText}"> Platform Dashboard</title>
+    <style>
+        .header {
+            width: 30%;
+            margin: 0 0 1% 1%;
+            padding: 1%;
+
+            color: #3B4151;
+            background: rgba(230, 230, 230, .3);
+            border-bottom: 1px solid rgba(59, 65, 81, .3);
+
+            font-size: 24px;
+            font-family: Titillium Web, sans-serif;
+        }
+
+        a {
+            display:block;
+
+            width: 30%;
+            margin: 1%;
+            padding: 1% 1%;
+
+            border-radius: 3px;
+            color: #FFFFFF;
+
+            font-weight: 700;
+            text-align: center;
+            text-shadow: rgba(0, 0, 0, .5) 2px 1px;
+            font-family: Titillium Web, sans-serif;
+            text-decoration: none;
+            white-space: nowrap;
+            overflow: hidden;
+
+            transition: linear .7s;
+
+        }
+
+        a:hover {
+            margin: 1% .5% 1% 1.5%;
+        }
+
+        .actuators a {
+            background: #61AFFE;
+        }
+
+        .external a {
+            background: #49CC90;
+        }
+    </style>
+</head>
+<body>
+<h1 th:text="${headerText}">
+    Platform Dashboard
+</h1>
+
+    <div class="actuators">
+        <div class="header">
+            Actuators
+        </div>
+            <a th:href="@{/actuator/info}" target="_blank">INFO</a>
+            <a th:href="@{/actuator/health}" target="_blank">HEALTH</a>
+            <a th:href="@{/actuator/env}" target="_blank">ENVIRONMENT</a>
+    </div>
+    <div class="external">
+        <div class="header">
+            Swagger
+        </div>
+            <a th:href="@{/swagger-ui.html}" target="_blank">SWAGGER</a>
+    </div>
+
+
+</body>
+</html>

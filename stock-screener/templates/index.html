@@ -1,0 +1,229 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Morning Movers — Top 20 Screener</title>
+<style>
+  :root {
+    --bg: #0f1115;
+    --card: #171a21;
+    --border: #262a33;
+    --text: #e8e9ed;
+    --muted: #8b92a3;
+    --accent: #34d399;
+    --accent-dim: #10b981;
+    --warn: #f59e0b;
+    --row-alt: #1c1f27;
+  }
+  @media (prefers-color-scheme: light) {
+    :root {
+      --bg: #f7f8fa;
+      --card: #ffffff;
+      --border: #e3e6ea;
+      --text: #1a1d24;
+      --muted: #5a6172;
+      --accent: #059669;
+      --accent-dim: #047857;
+      --warn: #b45309;
+      --row-alt: #f2f4f7;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    padding: 32px 20px 60px;
+  }
+  .wrap { max-width: 1180px; margin: 0 auto; }
+  header { display: flex; justify-content: space-between; align-items: flex-start; gap: 16px; flex-wrap: wrap; margin-bottom: 8px; }
+  h1 { font-size: 1.6rem; margin: 0 0 4px; }
+  .subtitle { color: var(--muted); font-size: 0.9rem; margin: 0; }
+  .meta { color: var(--muted); font-size: 0.85rem; margin-top: 4px; }
+  button {
+    background: var(--accent);
+    color: #06281f;
+    border: none;
+    padding: 10px 18px;
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: 0.9rem;
+    cursor: pointer;
+  }
+  button:disabled { opacity: 0.6; cursor: default; }
+  .disclaimer {
+    background: rgba(245, 158, 11, 0.12);
+    border: 1px solid var(--warn);
+    color: var(--text);
+    border-radius: 10px;
+    padding: 12px 16px;
+    font-size: 0.85rem;
+    margin: 20px 0 28px;
+    line-height: 1.5;
+  }
+  .table-container {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 14px;
+    overflow-x: auto;
+  }
+  table { border-collapse: collapse; font-size: 0.85rem; width: 1360px; table-layout: fixed; }
+  thead th {
+    text-align: left;
+    padding: 12px 14px;
+    color: var(--muted);
+    font-weight: 600;
+    font-size: 0.72rem;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    border-bottom: 1px solid var(--border);
+    white-space: nowrap;
+  }
+  tbody tr:nth-child(even) { background: var(--row-alt); }
+  tbody td { padding: 10px 14px; vertical-align: middle; border-bottom: 1px solid var(--border); }
+  tbody tr:last-child td { border-bottom: none; }
+  .rank-badge {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 22px; height: 22px;
+    border-radius: 50%;
+    background: var(--accent);
+    color: #06281f;
+    font-weight: 700;
+    font-size: 0.72rem;
+  }
+  .ticker { font-weight: 700; }
+  .name { color: var(--muted); font-size: 0.78rem; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+  .price { font-weight: 600; white-space: nowrap; }
+  .final-score { color: var(--accent-dim); font-weight: 700; white-space: nowrap; }
+  .score-cell { display: flex; align-items: center; gap: 6px; white-space: nowrap; }
+  .bar-track { width: 46px; height: 6px; border-radius: 3px; background: var(--border); overflow: hidden; flex-shrink: 0; }
+  .bar-fill { height: 100%; background: var(--accent); }
+  .score-num { width: 30px; color: var(--muted); font-size: 0.78rem; }
+  .signals { color: var(--text); font-size: 0.78rem; line-height: 1.4; }
+  .signals span { color: var(--muted); }
+  .trend-dir { font-weight: 700; white-space: nowrap; }
+  .trend-dir.up { color: var(--accent-dim); }
+  .trend-dir.down { color: #dc4c4c; }
+  .trend-dir.flat { color: var(--muted); }
+  .trend-conf { display: block; color: var(--muted); font-size: 0.7rem; text-transform: capitalize; }
+  .empty { text-align: center; padding: 60px 20px; color: var(--muted); }
+  .scanning-note { color: var(--accent); font-size: 0.85rem; margin-top: 10px; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <div>
+      <h1>Morning Movers</h1>
+      <p class="subtitle">Top 20 US large-cap stocks by quantitative screen: technical momentum + analyst targets + news sentiment</p>
+      {% if result %}
+      <p class="meta">Last scan: {{ result.generated_at }} · scanned {{ result.scanned_successfully }}/{{ result.universe_size }} tickers</p>
+      {% endif %}
+    </div>
+    <form action="/refresh" method="post">
+      <button type="submit" {% if scanning %}disabled{% endif %}>
+        {% if scanning %}Scanning…{% else %}Run scan now{% endif %}
+      </button>
+    </form>
+  </header>
+
+  <div class="disclaimer">
+    <strong>Not financial advice.</strong> This is a quantitative screening tool combining technical price/volume
+    signals, free analyst target data, and basic keyword-based headline sentiment. The "Projected trend" column is
+    a naive straight-line extrapolation of the last 20 trading days, not a forecast — real prices don't move in
+    straight lines, and low-confidence trends are mostly noise. Nothing here predicts future returns. Always do
+    your own research before making any investment decision.
+  </div>
+
+  {% if scanning %}
+  <p class="scanning-note">A scan is running in the background — this page will show fresh results once it completes. Refresh in ~30-60 seconds.</p>
+  {% endif %}
+
+  {% if result and result.top %}
+  <div class="table-container">
+    <table>
+      <colgroup>
+        <col style="width: 40px;">
+        <col style="width: 70px;">
+        <col style="width: 170px;">
+        <col style="width: 90px;">
+        <col style="width: 70px;">
+        <col style="width: 110px;">
+        <col style="width: 110px;">
+        <col style="width: 110px;">
+        <col style="width: 130px;">
+        <col style="width: 350px;">
+      </colgroup>
+      <thead>
+        <tr>
+          <th>#</th>
+          <th>Ticker</th>
+          <th>Company</th>
+          <th>Price</th>
+          <th>Score</th>
+          <th>Technical</th>
+          <th>Analyst</th>
+          <th>Sentiment</th>
+          <th title="Naive linear-regression extrapolation of the last 20 trading days, projected 5 sessions forward. Not a forecast.">Projected trend (5d)</th>
+          <th>Key signals</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for stock in result.top %}
+        <tr>
+          <td><span class="rank-badge">{{ loop.index }}</span></td>
+          <td class="ticker">{{ stock.ticker }}</td>
+          <td class="name" title="{{ stock.name }}">{{ stock.name }}</td>
+          <td class="price">${{ "%.2f"|format(stock.price) }}</td>
+          <td class="final-score">{{ stock.final_score }}</td>
+          <td>
+            <div class="score-cell">
+              <div class="bar-track"><div class="bar-fill" style="width: {{ stock.technical.score }}%"></div></div>
+              <span class="score-num">{{ stock.technical.score }}</span>
+            </div>
+          </td>
+          <td>
+            <div class="score-cell">
+              <div class="bar-track"><div class="bar-fill" style="width: {{ stock.analyst.score }}%"></div></div>
+              <span class="score-num">{{ stock.analyst.score }}</span>
+            </div>
+          </td>
+          <td>
+            <div class="score-cell">
+              <div class="bar-track"><div class="bar-fill" style="width: {{ stock.sentiment.score }}%"></div></div>
+              <span class="score-num">{{ stock.sentiment.score }}</span>
+            </div>
+          </td>
+          <td>
+            {% set trend = stock.technical.trend %}
+            <span class="trend-dir {{ trend.direction }}">
+              {% if trend.direction == "up" %}&#9650;{% elif trend.direction == "down" %}&#9660;{% else %}&#9644;{% endif %}
+              {{ "%+.2f"|format(trend.projected_pct) }}%
+            </span>
+            <span class="trend-conf">{{ trend.confidence }} confidence (R&sup2; {{ trend.r_squared }})</span>
+          </td>
+          <td class="signals">{{ stock.reasons|join(" · ") }}</td>
+        </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+  </div>
+  {% else %}
+  <div class="empty">
+    <p>No scan results yet.</p>
+    <p>Click "Run scan now" to screen the ticker universe for the first time.</p>
+  </div>
+  {% endif %}
+</div>
+
+{% if scanning %}
+<script>
+  setTimeout(() => window.location.reload(), 8000);
+</script>
+{% endif %}
+</body>
+</html>

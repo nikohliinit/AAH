@@ -1,0 +1,111 @@
+{
+
+  "appointmentNumber": 54643660,
+
+  "appointmentStatus": "LOAD COMPLETE",
+
+  "appointmentType": "DC to DC",
+
+  "appointmentDestLocNumber": "7",
+
+  "appointmentFbNbrBolNbrPoShpmtNbr": [],
+
+  "appointmentCreateTs": "2025-05-27T03:56:16.000+00:00",
+
+  "appointmentLastUpdTs": "2025-05-27T04:04:28.000+00:00",
+
+  "appointmentOrigSchduledArrivalTs": "2025-05-27T09:30:00.000+00:00",
+
+  "appointmentScheduledArivalTs": "2025-05-27T09:30:00.000+00:00",
+
+  "appointmentVendorNumber": 64524,
+
+  "appointmentVendorName": "PREPAID CARRIER SHIPMENT",
+
+  "appointmentVendorCarrScac": "PPDC",
+
+  "appointmentTrailerNumber": 463960,
+
+  "appointmentActualArrivalTs": null,
+
+  "appointmentRequestedTs": "2025-05-27 03:56:16",
+
+  "appointmentLoadingTs": "2025-05-27 04:03:56",
+
+  "appointmentLoadCompletedTs": "2025-05-27 04:04:27",
+
+  "appointmentInTransitTs": null,
+
+  "appointmentReadyUnloadTs": null,
+
+  "appointmentUnloadingTs": null,
+
+  "appointmentUnloadCompletedTs": null,
+
+  "appointmentArchivedTs": null,
+
+  "appointmentSuspendedTs": null,
+
+  "appointmentCancelledTs": null,
+
+  "appointmentCurrentTrailerLocNumber": 3065,
+
+  "appointmentCurrTrailerYardName": "ANNEX DOORS",
+
+  "appointmentCurrTrailerYardAreaID": "A07",
+
+  "appointmentCubePercentage": 0,
+
+  "appointmentCarrierType": "TRAILER LOAD",
+
+  "appointmentNumberOfCartons": 2,
+
+  "appointmentNumberOfGermentOnHungers": 0,
+
+  "appointmentDropFlag": "N",
+
+  "appointmentCarrierTrailerNumber": "CAR3176",
+
+  "appointmentUnconfirmedTs": null,
+
+  "appointmentFlatRate": 0.0,
+
+  "appointmentRatePerMile": 0.0,
+
+  "appointmentRatePerStop": 0.0,
+
+  "appointmentAdditionalStops": 0,
+
+  "appointmentEntrySource": "Manual",
+
+  "appointmentChangeOrigin": "AppStatLoadCplt",
+
+  "appointmentOrigLocNumber": 3065,
+
+  "appointmentFreightType": "Backstage to SDC",
+
+  "appointmentDispatchFlag": "N",
+
+  "appointmentTrailerReturnFlag": "N",
+
+  "appointmentParentReason": null,
+
+  "appointmentParentappointmentNumber": null,
+
+  "appointmentProposedTs": null,
+
+  "appointmentCarrierPendingTs": null,
+
+  "appointmentCarrierTenderTs": null,
+
+  "appointmentTrailerClassName": "CL04-35\u0027X11\u00276\"",
+
+  "appointmentEmptyFlag": "N",
+
+  "appointmentLoadSecurityDeviceNumber": null,
+
+  "appointmentLoadSecurityLocNumber": null,
+
+  "appointmentSealConditionDescription": null
+
+}

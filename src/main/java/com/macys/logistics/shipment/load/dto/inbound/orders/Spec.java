@@ -1,0 +1,22 @@
+package com.macys.logistics.shipment.load.dto.inbound.orders;
+
+import com.fasterxml.jackson.annotation.JsonProperty;
+import lombok.Data;
+
+import java.io.Serializable;
+
+@Data
+public class Spec implements Serializable {
+    
+    @JsonProperty("seq")
+    private Integer seq;
+    
+    @JsonProperty("type")
+    private String type;
+    
+    @JsonProperty("value")
+    private String value;
+    
+    @JsonProperty("description")
+    private String description;
+}

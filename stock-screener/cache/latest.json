@@ -1,0 +1,883 @@
+{
+  "generated_at": "2026-08-16T22:58:46",
+  "universe_size": 100,
+  "scanned_successfully": 98,
+  "top": [
+    {
+      "ticker": "AVGO",
+      "name": "Broadcom Inc.",
+      "final_score": 78.9,
+      "price": 392.99,
+      "technical": {
+        "score": 76.4,
+        "rsi": 54.5,
+        "golden_cross": true,
+        "macd_bullish_cross": false,
+        "volume_ratio": 1.63,
+        "momentum_10d_pct": 0.95,
+        "trend": {
+          "direction": "up",
+          "projected_pct": 9.61,
+          "projected_price": 430.75,
+          "r_squared": 0.5,
+          "confidence": "medium"
+        }
+      },
+      "analyst": {
+        "score": 100.0,
+        "target_mean_price": 527.88446,
+        "current_price": 392.99,
+        "upside_pct": 34.33,
+        "recommendation": "strong_buy"
+      },
+      "sentiment": {
+        "score": 53.3,
+        "headlines_analyzed": 10,
+        "sample_headlines": [
+          "Dow Futures Slip, S&P 500, Nasdaq Futures Climb Ahead Of Key Retail Earnings, Fed Minutes: NLST, AVGO, LUNR, MRK Stocks In Focus",
+          "Wall Street\u2019s Biggest Funds Are Dumping Broadcom and Adding Taiwan Semiconductor. Time to Follow the \u2018Smart Money?\u2019",
+          "I Checked VIG's Top Holdings. They're Not What You'd Expect From a Dividend ETF."
+        ]
+      },
+      "reasons": [
+        "20-day average above 50-day average (uptrend)",
+        "Volume 1.63x the 20-day average",
+        "RSI at 54.5 (room to run, not overbought)",
+        "Analyst target implies 34.33% upside",
+        "Analyst consensus: strong_buy",
+        "20-day trend line projects +9.61% over 5 sessions (medium confidence)"
+      ]
+    },
+    {
+      "ticker": "INTU",
+      "name": "Intuit Inc.",
+      "final_score": 75.9,
+      "price": 345.66,
+      "technical": {
+        "score": 75.2,
+        "rsi": 67.7,
+        "golden_cross": true,
+        "macd_bullish_cross": false,
+        "volume_ratio": 0.88,
+        "momentum_10d_pct": 9.36,
+        "trend": {
+          "direction": "up",
+          "projected_pct": 5.44,
+          "projected_price": 364.47,
+          "r_squared": 0.84,
+          "confidence": "high"
+        }
+      },
+      "analyst": {
+        "score": 92.0,
+        "target_mean_price": 451.3212,
+        "current_price": 345.66,
+        "upside_pct": 30.57,
+        "recommendation": "buy"
+      },
+      "sentiment": {
+        "score": 53.3,
+        "headlines_analyzed": 10,
+        "sample_headlines": [
+          "Intuit, MongoDB, Cloudflare, Palantir Technologies, and The Trade Desk Shares Are Soaring, What You Need To Know",
+          "Cybersecurity Stock Sets Sights On Buy Point With Bolstered Outlook",
+          "Intuit's Options Price A Floor Below Anything The Stock Has Touched In A Year"
+        ]
+      },
+      "reasons": [
+        "20-day average above 50-day average (uptrend)",
+        "Up 9.36% over the last 10 sessions",
+        "Analyst target implies 30.57% upside",
+        "Analyst consensus: buy",
+        "20-day trend line projects +5.44% over 5 sessions (high confidence)"
+      ]
+    },
+    {
+      "ticker": "NVDA",
+      "name": "NVIDIA Corporation",
+      "final_score": 75.4,
+      "price": 225.16,
+      "technical": {
+        "score": 68.2,
+        "rsi": 75.4,
+        "golden_cross": true,
+        "macd_bullish_cross": false,
+        "volume_ratio": 0.63,
+        "momentum_10d_pct": 12.16,
+        "trend": {
+          "direction": "up",
+          "projected_pct": 1.85,
+          "projected_price": 229.34,
+          "r_squared": 0.5,
+          "confidence": "medium"
+        }
+      },
+      "analyst": {
+        "score": 100.0,
+        "target_mean_price": 302.82758,
+        "current_price": 225.16,
+        "upside_pct": 34.49,
+        "recommendation": "strong_buy"
+      },
+      "sentiment": {
+        "score": 56.7,
+        "headlines_analyzed": 10,
+        "sample_headlines": [
+          "2 Best Nuclear Power Stocks Right Now",
+          "Dow Jones Futures: Nvidia Leads 5 Stocks In Buy Areas, Sandisk Nears Key Level; Walmart Looms",
+          "SK Hynix's Stock Trades at Around 5 Times Next Year's Earnings Even After Revenue Grew 257%. Here's What a Multiple That Low Usually Signals About a Cyclical Business."
+        ]
+      },
+      "reasons": [
+        "20-day average above 50-day average (uptrend)",
+        "Up 12.16% over the last 10 sessions",
+        "Analyst target implies 34.49% upside",
+        "Analyst consensus: strong_buy",
+        "20-day trend line projects +1.85% over 5 sessions (medium confidence)"
+      ]
+    },
+    {
+      "ticker": "AMD",
+      "name": "Advanced Micro Devices, Inc.",
+      "final_score": 75.3,
+      "price": 514.39,
+      "technical": {
+        "score": 75.2,
+        "rsi": 53.5,
+        "golden_cross": false,
+        "macd_bullish_cross": true,
+        "volume_ratio": 0.89,
+        "momentum_10d_pct": 8.03,
+        "trend": {
+          "direction": "down",
+          "projected_pct": -9.85,
+          "projected_price": 463.75,
+          "r_squared": 0.17,
+          "confidence": "low"
+        }
+      },
+      "analyst": {
+        "score": 89.1,
+        "target_mean_price": 612.8383,
+        "current_price": 514.39,
+        "upside_pct": 19.14,
+        "recommendation": "strong_buy"
+      },
+      "sentiment": {
+        "score": 55.0,
+        "headlines_analyzed": 10,
+        "sample_headlines": [
+          "AI Money Moves Put These Five Stocks In Spotlight Last Week: NVDA, INTC, ORCL, AMD, SNDK",
+          "Wall Street\u2019s Biggest Funds Are Dumping Broadcom and Adding Taiwan Semiconductor. Time to Follow the \u2018Smart Money?\u2019",
+          "1 Major Red Flag AMD Investors Can't Afford to Ignore"
+        ]
+      },
+      "reasons": [
+        "MACD just crossed bullish",
+        "Up 8.03% over the last 10 sessions",
+        "RSI at 53.5 (room to run, not overbought)",
+        "Analyst target implies 19.14% upside",
+        "Analyst consensus: strong_buy"
+      ]
+    },
+    {
+      "ticker": "CRM",
+      "name": "Salesforce, Inc.",
+      "final_score": 73.0,
+      "price": 196.21,
+      "technical": {
+        "score": 72.7,
+        "rsi": 66.4,
+        "golden_cross": true,
+        "macd_bullish_cross": false,
+        "volume_ratio": 0.69,
+        "momentum_10d_pct": 6.62,
+        "trend": {
+          "direction": "up",
+          "projected_pct": 7.87,
+          "projected_price": 211.65,
+          "r_squared": 0.79,
+          "confidence": "high"
+        }
+      },
+      "analyst": {
+        "score": 85.6,
+        "target_mean_price": 242.4287,
+        "current_price": 196.21,
+        "upside_pct": 23.56,
+        "recommendation": "buy"
+      },
+      "sentiment": {
+        "score": 55.0,
+        "headlines_analyzed": 10,
+        "sample_headlines": [
+          "Jim Cramer Was Worried About Potential Impact On Salesforce Inc. (NYSE:CRM)\u2019s Dreamforce Conference",
+          "Salesforce (CRM) Stock Still Trades At a Discount After a 23% Slide",
+          "ADBE Stock: Collect 12% While Setting A 30%-Off Buy Price"
+        ]
+      },
+      "reasons": [
+        "20-day average above 50-day average (uptrend)",
+        "Up 6.62% over the last 10 sessions",
+        "Analyst target implies 23.56% upside",
+        "Analyst consensus: buy",
+        "20-day trend line projects +7.87% over 5 sessions (high confidence)"
+      ]
+    },
+    {
+      "ticker": "MU",
+      "name": "Micron Technology, Inc.",
+      "final_score": 72.2,
+      "price": 971.66,
+      "technical": {
+        "score": 61.0,
+        "rsi": 56.4,
+        "golden_cross": false,
+        "macd_bullish_cross": false,
+        "volume_ratio": 0.66,
+        "momentum_10d_pct": 18.06,
+        "trend": {
+          "direction": "down",
+          "projected_pct": -8.68,
+          "projected_price": 887.34,
+          "r_squared": 0.0,
+          "confidence": "low"
+        }
+      },
+      "analyst": {
+        "score": 100.0,
+        "target_mean_price": 1501.9767,
+        "current_price": 971.66,
+        "upside_pct": 54.58,
+        "recommendation": "strong_buy"
+      },
+      "sentiment": {
+        "score": 58.3,
+        "headlines_analyzed": 10,
+        "sample_headlines": [
+          "Wall Street\u2019s Biggest Funds Are Dumping Broadcom and Adding Taiwan Semiconductor. Time to Follow the \u2018Smart Money?\u2019",
+          "Micron Is Worth $1.1 Trillion and Sits 23% Below Its 52-Week High. Is the Stock a Buy?",
+          "Billionaire Investor David Tepper Just Exited 12 Stocks. These 5 Are the Most Surprising."
+        ]
+      },
+      "reasons": [
+        "Up 18.06% over the last 10 sessions",
+        "RSI at 56.4 (room to run, not overbought)",
+        "Analyst target implies 54.58% upside",
+        "Analyst consensus: strong_buy"
+      ]
+    },
+    {
+      "ticker": "V",
+      "name": "Visa Inc.",
+      "final_score": 72.1,
+      "price": 364.15,
+      "technical": {
+        "score": 72.3,
+        "rsi": 53.0,
+        "golden_cross": true,
+        "macd_bullish_cross": false,
+        "volume_ratio": 1.22,
+        "momentum_10d_pct": -0.36,
+        "trend": {
+          "direction": "up",
+          "projected_pct": 1.32,
+          "projected_price": 368.94,
+          "r_squared": 0.25,
+          "confidence": "low"
+        }
+      },
+      "analyst": {
+        "score": 84.3,
+        "target_mean_price": 416.20026,
+        "current_price": 364.15,
+        "upside_pct": 14.29,
+        "recommendation": "strong_buy"
+      },
+      "sentiment": {
+        "score": 53.3,
+        "headlines_analyzed": 10,
+        "sample_headlines": [
+          "Visa\u2019s Agentic Ready Program Moves Issuer-Layer Readiness From Theory to Production",
+          "More Than 30% of Americans 80 and Older Still Carry Mortgage Debt. The Number Climbs to 41% for Those 65 to 79, Visa Says",
+          "Visa (V) Drew Fresh Interest From Bill Ackman\u2019s Pershing Square"
+        ]
+      },
+      "reasons": [
+        "20-day average above 50-day average (uptrend)",
+        "RSI at 53.0 (room to run, not overbought)",
+        "Analyst target implies 14.29% upside",
+        "Analyst consensus: strong_buy"
+      ]
+    },
+    {
+      "ticker": "MA",
+      "name": "Mastercard Incorporated",
+      "final_score": 72.1,
+      "price": 569.29,
+      "technical": {
+        "score": 69.3,
+        "rsi": 63.6,
+        "golden_cross": true,
+        "macd_bullish_cross": false,
+        "volume_ratio": 0.84,
+        "momentum_10d_pct": -0.66,
+        "trend": {
+          "direction": "up",
+          "projected_pct": 2.46,
+          "projected_price": 583.3,
+          "r_squared": 0.45,
+          "confidence": "medium"
+        }
+      },
+      "analyst": {
+        "score": 86.9,
+        "target_mean_price": 665.2632,
+        "current_price": 569.29,
+        "upside_pct": 16.86,
+        "recommendation": "strong_buy"
+      },
+      "sentiment": {
+        "score": 56.7,
+        "headlines_analyzed": 10,
+        "sample_headlines": [
+          "Mastercard CEO: Cybersecurity Is Our Fastest-Growing Business",
+          "Visa (V) Drew Fresh Interest From Bill Ackman\u2019s Pershing Square",
+          "Billionaire Bill Ackman doubles down on these stocks in Q2"
+        ]
+      },
+      "reasons": [
+        "20-day average above 50-day average (uptrend)",
+        "RSI at 63.6 (room to run, not overbought)",
+        "Analyst target implies 16.86% upside",
+        "Analyst consensus: strong_buy",
+        "20-day trend line projects +2.46% over 5 sessions (medium confidence)"
+      ]
+    },
+    {
+      "ticker": "SLB",
+      "name": "SLB Limited",
+      "final_score": 72.0,
+      "price": 53.77,
+      "technical": {
+        "score": 75.7,
+        "rsi": 57.4,
+        "golden_cross": true,
+        "macd_bullish_cross": false,
+        "volume_ratio": 0.78,
+        "momentum_10d_pct": 8.43,
+        "trend": {
+          "direction": "up",
+          "projected_pct": 1.96,
+          "projected_price": 54.83,
+          "r_squared": 0.64,
+          "confidence": "medium"
+        }
+      },
+      "analyst": {
+        "score": 77.2,
+        "target_mean_price": 61.96552,
+        "current_price": 53.77,
+        "upside_pct": 15.24,
+        "recommendation": "buy"
+      },
+      "sentiment": {
+        "score": 55.0,
+        "headlines_analyzed": 10,
+        "sample_headlines": [
+          "SLB (SLB) Stock May Trade At A Discount On Cash Flow But Fairly On Earnings",
+          "SLB (SLB) Is Considered a Good Investment by Brokers: Is That True?",
+          "3 Cash-Producing Stocks with Open Questions"
+        ]
+      },
+      "reasons": [
+        "20-day average above 50-day average (uptrend)",
+        "Up 8.43% over the last 10 sessions",
+        "RSI at 57.4 (room to run, not overbought)",
+        "Analyst target implies 15.24% upside",
+        "Analyst consensus: buy",
+        "20-day trend line projects +1.96% over 5 sessions (medium confidence)"
+      ]
+    },
+    {
+      "ticker": "SYK",
+      "name": "Stryker Corporation",
+      "final_score": 71.7,
+      "price": 339.21,
+      "technical": {
+        "score": 75.8,
+        "rsi": 51.5,
+        "golden_cross": true,
+        "macd_bullish_cross": false,
+        "volume_ratio": 1.22,
+        "momentum_10d_pct": 4.15,
+        "trend": {
+          "direction": "up",
+          "projected_pct": 4.78,
+          "projected_price": 355.43,
+          "r_squared": 0.43,
+          "confidence": "medium"
+        }
+      },
+      "analyst": {
+        "score": 74.9,
+        "target_mean_price": 382.88,
+        "current_price": 339.21,
+        "upside_pct": 12.87,
+        "recommendation": "buy"
+      },
+      "sentiment": {
+        "score": 56.7,
+        "headlines_analyzed": 10,
+        "sample_headlines": [
+          "SYK Stock Gains 3.8% Since March-End: What's Driving the Uptrend?",
+          "What Does Stryker (SYK) Q1 Growth Mean If Costs Are Still Pressuring Earnings?",
+          "Can Stryker (SYK) Still Look Undervalued After Backlog Recovery?"
+        ]
+      },
+      "reasons": [
+        "20-day average above 50-day average (uptrend)",
+        "Up 4.15% over the last 10 sessions",
+        "RSI at 51.5 (room to run, not overbought)",
+        "Analyst target implies 12.87% upside",
+        "Analyst consensus: buy",
+        "20-day trend line projects +4.78% over 5 sessions (medium confidence)"
+      ]
+    },
+    {
+      "ticker": "AMAT",
+      "name": "Applied Materials, Inc.",
+      "final_score": 71.3,
+      "price": 507.18,
+      "technical": {
+        "score": 61.2,
+        "rsi": 48.4,
+        "golden_cross": false,
+        "macd_bullish_cross": false,
+        "volume_ratio": 1.7,
+        "momentum_10d_pct": -0.1,
+        "trend": {
+          "direction": "up",
+          "projected_pct": 2.52,
+          "projected_price": 519.97,
+          "r_squared": 0.0,
+          "confidence": "low"
+        }
+      },
+      "analyst": {
+        "score": 95.8,
+        "target_mean_price": 638.17145,
+        "current_price": 507.18,
+        "upside_pct": 25.83,
+        "recommendation": "strong_buy"
+      },
+      "sentiment": {
+        "score": 60.0,
+        "headlines_analyzed": 10,
+        "sample_headlines": [
+          "Applied Materials Trades More Than 25% Below Its High With Revenue at a Record",
+          "AMAT Q2 Deep Dive: AI Demand and Advanced Packaging Drive Guidance Upside, Market Reacts Cautiously",
+          "Applied Materials (AMAT) Stock: A Top AI Pick After Record Q3 Results"
+        ]
+      },
+      "reasons": [
+        "Volume 1.7x the 20-day average",
+        "RSI at 48.4 (room to run, not overbought)",
+        "Analyst target implies 25.83% upside",
+        "Analyst consensus: strong_buy"
+      ]
+    },
+    {
+      "ticker": "NOW",
+      "name": "ServiceNow, Inc.",
+      "final_score": 71.2,
+      "price": 124.0,
+      "technical": {
+        "score": 71.0,
+        "rsi": 71.3,
+        "golden_cross": true,
+        "macd_bullish_cross": false,
+        "volume_ratio": 0.6,
+        "momentum_10d_pct": 11.48,
+        "trend": {
+          "direction": "up",
+          "projected_pct": 11.46,
+          "projected_price": 138.21,
+          "r_squared": 0.84,
+          "confidence": "high"
+        }
+      },
+      "analyst": {
+        "score": 83.4,
+        "target_mean_price": 140.5789,
+        "current_price": 124.0,
+        "upside_pct": 13.37,
+        "recommendation": "strong_buy"
+      },
+      "sentiment": {
+        "score": 53.3,
+        "headlines_analyzed": 10,
+        "sample_headlines": [
+          "NOW Stock Has Rebounded Over 54% \u2014 Why ServiceNow\u2019s Rally Could Have Further Room to Run",
+          "Kevin O\u2019Leary Says \u2018AI Isn\u2019t Here to Replace Great Entrepreneurs,\u2019 Calls Technology \u2018Leverage\u2019 for Businesses That Want to Win",
+          "JPMorgan Turns Bullish on Salesforce as the Stock Runs Three Straight Weeks"
+        ]
+      },
+      "reasons": [
+        "20-day average above 50-day average (uptrend)",
+        "Up 11.48% over the last 10 sessions",
+        "Analyst target implies 13.37% upside",
+        "Analyst consensus: strong_buy",
+        "20-day trend line projects +11.46% over 5 sessions (high confidence)"
+      ]
+    },
+    {
+      "ticker": "SPGI",
+      "name": "S&P Global Inc.",
+      "final_score": 71.0,
+      "price": 418.8,
+      "technical": {
+        "score": 65.3,
+        "rsi": 34.8,
+        "golden_cross": true,
+        "macd_bullish_cross": false,
+        "volume_ratio": 0.83,
+        "momentum_10d_pct": 1.67,
+        "trend": {
+          "direction": "down",
+          "projected_pct": -4.47,
+          "projected_price": 400.07,
+          "r_squared": 0.5,
+          "confidence": "medium"
+        }
+      },
+      "analyst": {
+        "score": 93.4,
+        "target_mean_price": 516.95,
+        "current_price": 418.8,
+        "upside_pct": 23.44,
+        "recommendation": "strong_buy"
+      },
+      "sentiment": {
+        "score": 51.7,
+        "headlines_analyzed": 10,
+        "sample_headlines": [
+          "3 of Bill Ackman's New Stock Picks Are Interesting: S&P Global Trades 28% Below Its High While Visa and Mastercard Sit Near Theirs",
+          "Home Depot Paid Shareholders $68 Billion. The Stock Still Lagged.",
+          "PCG Passed Our Value-Trap Test. Now What?"
+        ]
+      },
+      "reasons": [
+        "20-day average above 50-day average (uptrend)",
+        "Analyst target implies 23.44% upside",
+        "Analyst consensus: strong_buy"
+      ]
+    },
+    {
+      "ticker": "DIS",
+      "name": "Walt Disney Company (The)",
+      "final_score": 70.8,
+      "price": 106.85,
+      "technical": {
+        "score": 68.6,
+        "rsi": 75.8,
+        "golden_cross": true,
+        "macd_bullish_cross": false,
+        "volume_ratio": 0.71,
+        "momentum_10d_pct": 11.08,
+        "trend": {
+          "direction": "up",
+          "projected_pct": 1.63,
+          "projected_price": 108.59,
+          "r_squared": 0.8,
+          "confidence": "high"
+        }
+      },
+      "analyst": {
+        "score": 89.5,
+        "target_mean_price": 127.71935,
+        "current_price": 106.85,
+        "upside_pct": 19.53,
+        "recommendation": "strong_buy"
+      },
+      "sentiment": {
+        "score": 48.3,
+        "headlines_analyzed": 10,
+        "sample_headlines": [
+          "\u2018Spider-Man\u2019 Races to the $2 Billion Mark, Snaring Sony\u2019s Highest-Selling Movie",
+          "3 Dow Jones Stocks with Warning Signs",
+          "Magic Johnson Congratulates Good Friends Bob Iger and Josh Kushner on Buying the Lakers: Is the Franchise Headed for a Shakeup?"
+        ]
+      },
+      "reasons": [
+        "20-day average above 50-day average (uptrend)",
+        "Up 11.08% over the last 10 sessions",
+        "Analyst target implies 19.53% upside",
+        "Analyst consensus: strong_buy",
+        "20-day trend line projects +1.63% over 5 sessions (high confidence)"
+      ]
+    },
+    {
+      "ticker": "AMZN",
+      "name": "Amazon.com, Inc.",
+      "final_score": 70.5,
+      "price": 262.65,
+      "technical": {
+        "score": 64.3,
+        "rsi": 66.4,
+        "golden_cross": true,
+        "macd_bullish_cross": false,
+        "volume_ratio": 0.57,
+        "momentum_10d_pct": -3.29,
+        "trend": {
+          "direction": "up",
+          "projected_pct": 9.83,
+          "projected_price": 288.46,
+          "r_squared": 0.45,
+          "confidence": "medium"
+        }
+      },
+      "analyst": {
+        "score": 94.5,
+        "target_mean_price": 327.004,
+        "current_price": 262.65,
+        "upside_pct": 24.5,
+        "recommendation": "strong_buy"
+      },
+      "sentiment": {
+        "score": 50.0,
+        "headlines_analyzed": 10,
+        "sample_headlines": [
+          "'Spending is leading to earnings': Wall Street strategists see payoff from Big Tech's AI investment",
+          "Elon Musk and Jensen Huang\u2019s New Partnership Could Create the Next Era of Technology",
+          "Amazon, Alphabet, and Microsoft Are Dropping Nearly $600 Billion on Capital Expenditures: 1 Clear Winner Emerges"
+        ]
+      },
+      "reasons": [
+        "20-day average above 50-day average (uptrend)",
+        "Analyst target implies 24.5% upside",
+        "Analyst consensus: strong_buy",
+        "20-day trend line projects +9.83% over 5 sessions (medium confidence)"
+      ]
+    },
+    {
+      "ticker": "VRTX",
+      "name": "Vertex Pharmaceuticals Incorpor",
+      "final_score": 70.1,
+      "price": 505.75,
+      "technical": {
+        "score": 74.3,
+        "rsi": 61.6,
+        "golden_cross": true,
+        "macd_bullish_cross": false,
+        "volume_ratio": 0.84,
+        "momentum_10d_pct": 6.01,
+        "trend": {
+          "direction": "up",
+          "projected_pct": 3.94,
+          "projected_price": 525.65,
+          "r_squared": 0.57,
+          "confidence": "medium"
+        }
+      },
+      "analyst": {
+        "score": 73.3,
+        "target_mean_price": 563.12,
+        "current_price": 505.75,
+        "upside_pct": 11.34,
+        "recommendation": "buy"
+      },
+      "sentiment": {
+        "score": 55.0,
+        "headlines_analyzed": 10,
+        "sample_headlines": [
+          "Can AbCellera Biologics (ABCL)\u2019s Vertex Pharmaceuticals Incorporated (VRTX) Deal Turn its TCE Platform Into a Breakthrough?",
+          "Is Vertex Pharmaceuticals (VRTX) Fairly Valued As Pipeline Catalysts Near?",
+          "Vertex Pharmaceuticals Just Hit an All-Time High. Here's Why the Biotech Stock Could Soar Even More"
+        ]
+      },
+      "reasons": [
+        "20-day average above 50-day average (uptrend)",
+        "Up 6.01% over the last 10 sessions",
+        "RSI at 61.6 (room to run, not overbought)",
+        "Analyst target implies 11.34% upside",
+        "Analyst consensus: buy",
+        "20-day trend line projects +3.94% over 5 sessions (medium confidence)"
+      ]
+    },
+    {
+      "ticker": "WFC",
+      "name": "Wells Fargo & Company",
+      "final_score": 69.3,
+      "price": 88.82,
+      "technical": {
+        "score": 70.9,
+        "rsi": 57.5,
+        "golden_cross": true,
+        "macd_bullish_cross": false,
+        "volume_ratio": 0.65,
+        "momentum_10d_pct": 3.33,
+        "trend": {
+          "direction": "flat",
+          "projected_pct": 0.29,
+          "projected_price": 89.08,
+          "r_squared": 0.44,
+          "confidence": "medium"
+        }
+      },
+      "analyst": {
+        "score": 74.9,
+        "target_mean_price": 100.23913,
+        "current_price": 88.82,
+        "upside_pct": 12.86,
+        "recommendation": "buy"
+      },
+      "sentiment": {
+        "score": 56.7,
+        "headlines_analyzed": 10,
+        "sample_headlines": [
+          "3 Bank Stocks Walking a Fine Line",
+          "Wells Fargo (WFC) Could Be 10% Undervalued After Preferred Dividend Declaration",
+          "Dell Stock Rises as Wells Fargo Lifts Target to $545"
+        ]
+      },
+      "reasons": [
+        "20-day average above 50-day average (uptrend)",
+        "Up 3.33% over the last 10 sessions",
+        "RSI at 57.5 (room to run, not overbought)",
+        "Analyst target implies 12.86% upside",
+        "Analyst consensus: buy"
+      ]
+    },
+    {
+      "ticker": "GILD",
+      "name": "Gilead Sciences, Inc.",
+      "final_score": 68.9,
+      "price": 138.36,
+      "technical": {
+        "score": 71.6,
+        "rsi": 65.6,
+        "golden_cross": true,
+        "macd_bullish_cross": false,
+        "volume_ratio": 0.51,
+        "momentum_10d_pct": 6.26,
+        "trend": {
+          "direction": "down",
+          "projected_pct": -0.63,
+          "projected_price": 137.49,
+          "r_squared": 0.5,
+          "confidence": "medium"
+        }
+      },
+      "analyst": {
+        "score": 75.8,
+        "target_mean_price": 157.40741,
+        "current_price": 138.36,
+        "upside_pct": 13.77,
+        "recommendation": "buy"
+      },
+      "sentiment": {
+        "score": 51.7,
+        "headlines_analyzed": 10,
+        "sample_headlines": [
+          "Gilead Sciences (GILD): Buy, Sell, or Hold Post Q2 Earnings?",
+          "Can MacroGenics (MGNX) Turn Gilead Sciences (GILD)\u2019s $10M Milestone Into a Major Pipeline Catalyst?",
+          "Gilead wins appeals court ruling against overseas drug imports"
+        ]
+      },
+      "reasons": [
+        "20-day average above 50-day average (uptrend)",
+        "Up 6.26% over the last 10 sessions",
+        "Analyst target implies 13.77% upside",
+        "Analyst consensus: buy"
+      ]
+    },
+    {
+      "ticker": "META",
+      "name": "Meta Platforms, Inc.",
+      "final_score": 68.6,
+      "price": 589.85,
+      "technical": {
+        "score": 57.1,
+        "rsi": 48.8,
+        "golden_cross": false,
+        "macd_bullish_cross": false,
+        "volume_ratio": 0.55,
+        "momentum_10d_pct": 5.95,
+        "trend": {
+          "direction": "down",
+          "projected_pct": -3.91,
+          "projected_price": 566.79,
+          "r_squared": 0.22,
+          "confidence": "low"
+        }
+      },
+      "analyst": {
+        "score": 97.9,
+        "target_mean_price": 754.14246,
+        "current_price": 589.85,
+        "upside_pct": 27.85,
+        "recommendation": "strong_buy"
+      },
+      "sentiment": {
+        "score": 53.3,
+        "headlines_analyzed": 10,
+        "sample_headlines": [
+          "'Spending is leading to earnings': Wall Street strategists see payoff from Big Tech's AI investment",
+          "Meta to face massive social media addiction trial Tuesday",
+          "Why Reddit (RDDT) Stock Is Up Today"
+        ]
+      },
+      "reasons": [
+        "Up 5.95% over the last 10 sessions",
+        "RSI at 48.8 (room to run, not overbought)",
+        "Analyst target implies 27.85% upside",
+        "Analyst consensus: strong_buy"
+      ]
+    },
+    {
+      "ticker": "LLY",
+      "name": "Eli Lilly and Company",
+      "final_score": 68.3,
+      "price": 1180.16,
+      "technical": {
+        "score": 72.0,
+        "rsi": 47.5,
+        "golden_cross": true,
+        "macd_bullish_cross": false,
+        "volume_ratio": 0.85,
+        "momentum_10d_pct": 2.87,
+        "trend": {
+          "direction": "up",
+          "projected_pct": 2.06,
+          "projected_price": 1204.51,
+          "r_squared": 0.09,
+          "confidence": "low"
+        }
+      },
+      "analyst": {
+        "score": 73.1,
+        "target_mean_price": 1310.8993,
+        "current_price": 1180.16,
+        "upside_pct": 11.08,
+        "recommendation": "buy"
+      },
+      "sentiment": {
+        "score": 51.7,
+        "headlines_analyzed": 10,
+        "sample_headlines": [
+          "Eli Lilly\u2019s (LLY) Growth Story Keeps Adding Chapters",
+          "Eli Lilly Is Building a Weight Loss Drug for Every Kind of Patient",
+          "Eli Lilly\u2019s Weight-Loss Pill Just Got Its First Foothold in Europe"
+        ]
+      },
+      "reasons": [
+        "20-day average above 50-day average (uptrend)",
+        "Up 2.87% over the last 10 sessions",
+        "RSI at 47.5 (room to run, not overbought)",
+        "Analyst target implies 11.08% upside",
+        "Analyst consensus: buy"
+      ]
+    }
+  ]
+}

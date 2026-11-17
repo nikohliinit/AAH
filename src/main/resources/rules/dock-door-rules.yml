@@ -1,0 +1,113 @@
+rules:
+  # ============================================================
+  # SINGLE LOAD @ DOOR
+  # ============================================================
+  - name: single-door-attach
+    when:
+      trailerPresentAt: DOOR
+      numberOfLoadsPresentInTM: SINGLE
+      sameDockDoorExistsWithLoad: NONE
+    then:
+      action: ATTACH
+  - name: single-door-update
+    when:
+      trailerPresentAt: DOOR
+      numberOfLoadsPresentInTM: SINGLE
+      sameDockDoorExistsWithLoad: DIFFERENT
+    then:
+      action: UPDATE
+  - name: single-door-no-action
+    when:
+      trailerPresentAt: DOOR
+      numberOfLoadsPresentInTM: SINGLE
+      sameDockDoorExistsWithLoad: SAME
+    then:
+      action: NO_ACTION
+  # ============================================================
+  # SINGLE LOAD @ YARD
+  # ============================================================
+  - name: single-yard-detach
+    when:
+      trailerPresentAt: YARD
+      numberOfLoadsPresentInTM: SINGLE
+      dockDoorExistsWithLoad: true
+    then:
+      action: DETACH
+  - name: single-yard-no-action
+    when:
+      trailerPresentAt: YARD
+      numberOfLoadsPresentInTM: SINGLE
+      dockDoorExistsWithLoad: false
+    then:
+      action: NO_ACTION
+  # ============================================================
+  # MULTIPLE LOAD @ DOOR
+  # IMPORTANT: ORDER MATTERS
+  # ============================================================
+  #  UNIQUE appointment + DIFFERENT → UPDATE
+  - name: multi-door-unique-update
+    when:
+      trailerPresentAt: DOOR
+      numberOfLoadsPresentInTM: MULTIPLE
+      appointmentExistsWithLoad: UNIQUE
+      sameDockDoorExistsWithLoad: DIFFERENT
+    then:
+      action: UPDATE
+  #  UNIQUE appointment + NONE → ATTACH
+  - name: multi-door-unique-attach
+    when:
+      trailerPresentAt: DOOR
+      numberOfLoadsPresentInTM: MULTIPLE
+      appointmentExistsWithLoad: UNIQUE
+      sameDockDoorExistsWithLoad: NONE
+    then:
+      action: ATTACH
+  #  UNIQUE appointment + SAME → NO_ACTION
+  - name: multi-door-unique-same
+    when:
+      trailerPresentAt: DOOR
+      numberOfLoadsPresentInTM: MULTIPLE
+      appointmentExistsWithLoad: UNIQUE
+      sameDockDoorExistsWithLoad: SAME
+    then:
+      action: NO_ACTION
+  #  MULTIPLE loads + stale dockdoor exists → DETACH
+  - name: multi-door-detach-stale
+    when:
+      trailerPresentAt: DOOR
+      numberOfLoadsPresentInTM: MULTIPLE
+      dockDoorExistsWithLoad: true
+    then:
+      action: DETACH
+  #  MULTIPLE ambiguous → NO_ACTION
+  - name: multi-door-ambiguous
+    when:
+      trailerPresentAt: DOOR
+      numberOfLoadsPresentInTM: MULTIPLE
+      appointmentExistsWithLoad: NONE
+    then:
+      action: NO_ACTION
+  - name: multi-door-duplicate-appointments
+    when:
+      trailerPresentAt: DOOR
+      numberOfLoadsPresentInTM: MULTIPLE
+      appointmentExistsWithLoad: MULTIPLE
+    then:
+      action: NO_ACTION
+  # ============================================================
+  # MULTIPLE LOAD @ YARD
+  # ============================================================
+  - name: multi-yard-detach
+    when:
+      trailerPresentAt: YARD
+      numberOfLoadsPresentInTM: MULTIPLE
+      dockDoorExistsWithLoad: true
+    then:
+      action: DETACH
+  - name: multi-yard-no-action
+    when:
+      trailerPresentAt: YARD
+      numberOfLoadsPresentInTM: MULTIPLE
+      dockDoorExistsWithLoad: false
+    then:
+      action: NO_ACTION

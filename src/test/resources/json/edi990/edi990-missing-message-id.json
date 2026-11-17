@@ -1,0 +1,11 @@
+{
+    "data": {
+        "beginningSegment": {
+            "standardCarrierAlphaCode": "NOMSG",
+            "shipmentIdentificationNumber": "55555555555",
+            "responseCode": "A",
+            "eventCode": "06",
+            "transactionSetPurposeCode": "00"
+        }
+    }
+}
